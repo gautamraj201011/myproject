@@ -17,7 +17,7 @@
         <ul class="nav navbar-nav"> <li><a href="http://localhost/project/public/parties/create">Party Registration</a></li></ul>
         <ul class="nav navbar-nav"> <li><a href="http://localhost/project/public/voting/create">Voting</a></li></ul>
         <ul class="nav navbar-nav"> <li><a href="http://localhost/project/public/verification/create">Verification</a></li></ul>
-        <ul class="nav navbar-nav"> <li><a href="result/create">Result</a></li></ul>
+        <ul class="nav navbar-nav"> <li><a href="http://localhost/project/public/result/create">Result</a></li></ul>
     </div>
 </nav>
 
