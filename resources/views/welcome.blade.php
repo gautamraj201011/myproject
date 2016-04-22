@@ -25,7 +25,7 @@
             <ul class="nav navbar-nav"> <li><a href="parties/create">Party Registration</a></li></ul>
             <ul class="nav navbar-nav"> <li><a href="voting/create">Voting</a></li></ul>
             <ul class="nav navbar-nav"> <li><a href="verification/create">Verification</a></li></ul>
-
+            <ul class="nav navbar-nav"> <li><a href="result/create">Result</a></li></ul>
         </div>
     </nav>
 
