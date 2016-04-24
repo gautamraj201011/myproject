@@ -10,14 +10,14 @@
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
 
-        <ul class="nav navbar-nav"><li><a href="http://localhost/project/public/">Home</a></li></ul>
-        <ul class="nav navbar-nav"> <li><a href="http://localhost/project/public/elections/create">Election</a></li></ul>
-        <ul class="nav navbar-nav"> <li><a href="http://localhost/project/public/candidate/create">Candidate Registration</a></li></ul>
-        <ul class="nav navbar-nav"> <li><a href="http://localhost/project/public/voter/create">Voter Registration</a></li></ul>
-        <ul class="nav navbar-nav"> <li><a href="http://localhost/project/public/parties/create">Party Registration</a></li></ul>
-        <ul class="nav navbar-nav"> <li><a href="http://localhost/project/public/voting/create">Voting</a></li></ul>
-        <ul class="nav navbar-nav"> <li><a href="http://localhost/project/public/verification/create">Verification</a></li></ul>
-        <ul class="nav navbar-nav"> <li><a href="http://localhost/project/public/result/create">Result</a></li></ul>
+        <ul class="nav navbar-nav"><li><a href="http://localhost/projectver0.1/public/">Home</a></li></ul>
+        <ul class="nav navbar-nav"> <li><a href="http://localhost/projectver0.1/public/elections/create">Election</a></li></ul>
+        <ul class="nav navbar-nav"> <li><a href="http://localhost/projectver0.1/public/candidate/create">Candidate Registration</a></li></ul>
+        <ul class="nav navbar-nav"> <li><a href="http://localhost/projectver0.1/public/voter/create">Voter Registration</a></li></ul>
+        <ul class="nav navbar-nav"> <li><a href="http://localhost/projectver0.1/public/parties/create">Party Registration</a></li></ul>
+        <ul class="nav navbar-nav"> <li><a href="http://localhost/projectver0.1/public/voting/create">Voting</a></li></ul>
+        <ul class="nav navbar-nav"> <li><a href="http://localhost/projectver0.1/public/verification/create">Verification</a></li></ul>
+        <ul class="nav navbar-nav"> <li><a href="http://localhost/projectver0.1/public/result/create">Result</a></li></ul>
     </div>
 </nav>
 
