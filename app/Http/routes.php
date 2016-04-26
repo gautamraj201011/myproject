@@ -25,7 +25,7 @@ Route::resource('test','TestController');
 Route::resource('vote','VoteController');
 Route::resource('verification','VerificationController');
 Route::resource('result','ResultController');
-//commit 102
+//commit 10001
 
 
 
