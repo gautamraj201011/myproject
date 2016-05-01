@@ -12,10 +12,10 @@
 
 
     {!! Form::open(
-    array(
-    'route' => 'constituency.store',
-    'class' => 'form')
-    ) !!}
+      array(
+        'route' => 'constituency.store',
+        'class' => 'form')
+      ) !!}
 
     @if (count($errors) > 0)
         <div class="alert alert-danger">
@@ -31,37 +31,35 @@
     <div class="form-group">
         {!! Form::label('ElectionID   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;') !!}
         {!! Form::text('electionid', null,
-        array(
-        'class'=>'form-control',
-        'placeholder'=>'id'
-        )) !!} </div><br>
+          array(
+            'class'=>'form-control',
+            'placeholder'=>'id'
+          )) !!} </div><br>
 
     <div class="form-group">
         {!! Form::label('Constituency Id   &nbsp;') !!}
         {!! Form::text('constituencyid', null,
-        array(
-        'class'=>'form-control',
-        'placeholder'=>'name'
-        )) !!}
+          array(
+            'class'=>'form-control',
+            'placeholder'=>'name'
+          )) !!}
     </div><br>
 
 
-    {!! $countryList = App\BlockDetail::lists('blockid','block');  !!}
+    {!! $blockList = App\BlockDetail::lists('block')  !!}
+
 
     <div class="form-group">
-        {!! Form::label('Blocks  &nbsp;') !!}
-        {!! Form::select('block1', $countryList); !!}
-        {!! Form::select('block2', $countryList); !!}
-        {!! Form::select('block3',$countryList); !!}
-        {!! Form::select('block4', $countryList); !!}
-        {!! Form::select('block5', $countryList); !!}
-    </div><br>
-
-
-
+        {!! Form::label('Blocks') !!}<br />
+        {!! Form::select('blocks[]',
+        $blockList,
+        null,
+        ['class' => 'form-control',
+        'multiple' => 'multiple']) !!}
+    </div>
     <div class="form-group">
         {!! Form::submit('ADD',
-        array('class'=>'btn btn-primary'
+          array('class'=>'btn btn-primary'
         )) !!}
     </div>
     {!! Form::close() !!}
