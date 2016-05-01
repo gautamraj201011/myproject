@@ -25,6 +25,7 @@ Route::resource('test','TestController');
 Route::resource('vote','VoteController');
 Route::resource('verification','VerificationController');
 Route::resource('result','ResultController');
+Route::resource('constituency','ConstituencyController');
 //commit 10001
 
 
