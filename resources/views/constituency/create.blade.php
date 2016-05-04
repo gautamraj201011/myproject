@@ -46,7 +46,7 @@
     </div><br>
 
 
-    {!! $blockList = App\BlockDetail::lists('block')  !!}
+    {!! $blockList = App\BlockDetail::where('stateid','1')->lists('block')  !!}
 
 
     <div class="form-group">

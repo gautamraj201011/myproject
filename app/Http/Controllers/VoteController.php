@@ -31,6 +31,7 @@ class VoteController extends Controller
         $voters = DB::table('voting_statuses')->where('voterid', $voter)->first();
         //return $voters->status;
         DB::table('voting_statuses')->where('voterid', $voters->voterid)->update(array('status' => $voters->status+1));
+        DB::table('voting_statuses')->where('voterid', $voters->voterid)->update(array('token' => $voters->token+rand()));
         //return $voters->status;
         return view('vote.show');
 
