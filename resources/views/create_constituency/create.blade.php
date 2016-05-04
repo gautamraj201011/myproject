@@ -1,19 +1,32 @@
+
+
 @extends('layouts.master')
 
-@section('title', 'Create Constituency')
+@section('title', 'Voting Status')
 
 @section('sidebar')
     @parent
-    <h3><u>Create Constituency</u></h3>
+    <h3><u>Add Party</u></h3>
 @endsection
 
 @section('content')
+    <h1>Create Party</h1>
+
+    @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 
 
 
     {!! Form::open(
       array(
-        'route' => 'constituency.store',
+        'route' => 'create_constituency.store',
         'class' => 'form')
       ) !!}
 
@@ -29,35 +42,25 @@
     @endif
 
     <div class="form-group">
-        {!! Form::label('ElectionID   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;') !!}
-        {!! Form::text('electionid', $cons->electionid,
-          array(
-            'class'=>'form-control',
-            'placeholder'=>'id'
-          )) !!} </div><br>
-
-    <div class="form-group">
-        {!! Form::label('Constituency Id   &nbsp;') !!}
-        {!! Form::text('constituencyname', $cons->constituencyname,
+        {!! Form::label('Election ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;') !!}
+        {!! Form::text('electionid', null,
           array(
             'class'=>'form-control',
             'placeholder'=>'name'
+          )) !!} </div><br>
+
+    <div class="form-group">
+        {!! Form::label('Constituency Name &nbsp;') !!}
+        {!! Form::text('constituencyname', null,
+          array(
+            'class'=>'form-control',
+            'placeholder'=>'type'
           )) !!}
     </div><br>
 
 
-    {!! $blockList = App\BlockDetail::where('stateid','1')->lists('block')  !!}
 
-{!! $cons->electionid !!}
-    {!! $cons->constituencyname !!}
-    <div class="form-group">
-        {!! Form::label('Blocks') !!}<br />
-        {!! Form::select('blocks[]',
-        $blockList,
-        null,
-        ['class' => 'form-control',
-        'multiple' => 'multiple']) !!}
-    </div>
+
     <div class="form-group">
         {!! Form::submit('ADD',
           array('class'=>'btn btn-primary'
