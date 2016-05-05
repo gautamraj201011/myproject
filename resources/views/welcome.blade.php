@@ -18,7 +18,7 @@
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
 
-            <ul class="nav navbar-nav"><li><a href="http://localhost/project/public/">Home</a></li></ul>
+            <ul class="nav navbar-nav"><li><a href="http://localhost/projectver0.1/public/">Home</a></li></ul>
             <ul class="nav navbar-nav"> <li><a href="elections/create">Election</a></li></ul>
             <ul class="nav navbar-nav"> <li><a href="candidate/create">Candidate Registration</a></li></ul>
             <ul class="nav navbar-nav"> <li><a href="voter/create">Voter Registration</a></li></ul>
