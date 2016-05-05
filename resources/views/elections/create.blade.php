@@ -27,25 +27,13 @@
 
     <div class="form-group">
         {!! Form::label('Year') !!}
-        {!! Form::text('year', null,
-          array(
-            'class'=>'form-control',
-            'placeholder'=>'Year'
-          )) !!}</div><br/>
-    <div class="form-group">
+        {!! Form::selectRange('number', 2016, 2050)!!}
+
         {!! Form::label('Type') !!}
-        {!! Form::text('status', null,
-          array(
-            'class'=>'form-control',
-            'placeholder'=>'type'
-          )) !!} </div><br/>
-    <div class="form-group">
+        {!! Form::select('status', array('State','Union'),'state') !!}
+
         {!! Form::label('State') !!}
-        {!! Form::text('state', null,
-          array(
-            'class'=>'form-control',
-            'placeholder'=>'Name'
-          )) !!} </div><br/>
+        {!! Form::select('state', array('Bihar','Wb','Odisa'),'state') !!} </div>
     <div class="form-group">
         {!! Form::label('Start') !!}
         {!! Form::text('start', null,
@@ -70,6 +58,9 @@
     </div>
     {!! Form::close() !!}
     </div>
+
+
+
 @endsection
 
 
